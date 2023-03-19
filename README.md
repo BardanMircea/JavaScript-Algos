@@ -1,3 +1,3 @@
 # Matrice-Prepa-JavaScript.
 Algorithmic exercises in JS.
-Just warmihg up :-)
+Just warming up :-)
