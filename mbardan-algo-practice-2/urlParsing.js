@@ -75,4 +75,4 @@ module.exports = urlParsing;
 // console.log(urlParsing("www.facebook.com?lg=fr&page=home&unsecure_data=true"))
 // console.log(urlParsing("random_string-qxqpdrgf.uk.com/random_string-jqkqhffn/random_string-dneyajzm/random_string-tsiupuwo"))
 // console.log(urlParsing("random_string-ngwhvbsi.fr/random_string-eeehqpbb/random_string-nihebwfg/random_string-aioxmkyv?random_string-ghqquuri=random_string-cjokrrqo&random_string-zkhfayup=random_string-ldiihmmu&random_string-gcdgupoq=random_string-prfsovkj"))
-console.log(urlParsing("https://random_string-wyozbahi.net/random_string-moxggcfp/random_string-ywfhgagy/random_string-vmxxczkn?random_string-bixxvdxu=random_string-dumjtdtp&random_string-gzhexpdm=random_string-jdmlnutj&random_string-haoocsmw=random_string-wojhnzxo"))
+// console.log(urlParsing("https://random_string-wyozbahi.net/random_string-moxggcfp/random_string-ywfhgagy/random_string-vmxxczkn?random_string-bixxvdxu=random_string-dumjtdtp&random_string-gzhexpdm=random_string-jdmlnutj&random_string-haoocsmw=random_string-wojhnzxo"))
