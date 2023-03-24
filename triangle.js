@@ -49,7 +49,7 @@ for (let i = 0; i < baseLenght; i++) {
 
 for (let i = 0; i <= baseLenght; i++) {
   if (i === baseLenght) {
-    console.log(leftWhiteSpace + hypotenuse + triangleBase + cathetus);
+    console.log(hypotenuse + triangleBase + cathetus);
     break;
   }
   console.log(leftWhiteSpace + hypotenuse + rightWhiteSpace + cathetus);
