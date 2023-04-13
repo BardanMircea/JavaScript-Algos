@@ -16,7 +16,7 @@ const isFit = (coordsArr) => {
         return true;
     }
 
-    // check each point against all others, return false if the difference between any of the coordinates is more than 3 points
+// check each point against all others, return false if the difference between any of a point's coordinates and the coordinates of any another point is more than 3 units
     for(let i = 0; i < coordsArr.length; i++){
         for(let j = i + 1; j < coordsArr.length; j++){
             if(Math.abs(coordsArr[i][0] - coordsArr[j][0]) > 3 ||
