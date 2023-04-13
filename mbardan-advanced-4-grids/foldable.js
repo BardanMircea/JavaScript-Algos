@@ -5,7 +5,7 @@
 // You can visualise folding in two a sheet of paper if that helps.
 
 // For example, this grid:
-// 0 0 0 1 
+// 0 0 0 1
 // 1 0 1 0
 // 0 1 1 0
 // 1 0 0 0
@@ -35,32 +35,33 @@
 // Will return: true
 
 const foldable = (grid) => {
-    if(grid.length === 0){
-        return true
-    } 
-    
-    if(grid[0].length % 2 === 0){
-        for(let i = 0; i < grid.length; i++){
-            for(let j = 0; j < grid[i].length / 2; j++){
-                if(grid[i][j] === 1 && grid[i][grid[i].length - 1 - j] === 1){
-                    return false;
-                }
-            }
+  if (grid.length === 0) {
+    return true;
+  }
+
+  // check if grid has pair number of columns and check if it can fold into itself
+  if (grid[0].length % 2 === 0) {
+    for (let i = 0; i < grid.length; i++) {
+      for (let j = 0; j < grid[i].length / 2; j++) {
+        if (grid[i][j] === 1 && grid[i][grid[i].length - 1 - j] === 1) {
+          return false;
         }
-        return true
-    } else {
-        const middleColNum = parseInt(grid[0].length / 2);
-        console.log(middleColNum)
-        for(let i = 0; i < grid.length; i++){
-            for(let j = 0; j < middleColNum; j++){
-                if(grid[i][j] === 1 && grid[i][grid[i].length - 1 - j] === 1){
-                    return false;
-                }
-            }
-        }
-        return true
+      }
     }
-}
+    return true;
+  } else {
+    // else, check if it can fold around the middle column
+    const middleColNum = parseInt(grid[0].length / 2);
+    console.log(middleColNum);
+    for (let i = 0; i < grid.length; i++) {
+      for (let j = 0; j < middleColNum; j++) {
+        if (grid[i][j] === 1 && grid[i][grid[i].length - 1 - j] === 1) {
+          return false;
+        }
+      }
+    }
+    return true;
+  }
+};
 
-
-module.exports = foldable
+module.exports = foldable;
